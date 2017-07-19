@@ -11,4 +11,5 @@
     console.log("Nivel de conocimientos de programación del 1 al 10: \n ", Nivel);
     console.log("Expectativas que tienes del cuerso:", Expectativas);
 
+    //visto
 }) ();
