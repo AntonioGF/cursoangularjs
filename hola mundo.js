@@ -1,6 +1,9 @@
 (function() {
     'use strict';
-    var nombre="\n Luis",Profesion="\n Ingeniero en Sistemas", Edad=20, Nivel=0.5*10 ,Expectativas="\n Adquirir conocimiento de los tipos de lenguajes de programacion que existen...";
+    var nombre="\n Luis",
+        Profesion="\n Ingeniero en Sistemas", 
+        Edad=20, Nivel=0.5*10,
+        Expectativas="\n Adquirir conocimiento de los tipos de lenguajes de programacion que existen...";
 
     console.log("Nombre: ", nombre);
     console.log("Profesion: ", Profesion);
