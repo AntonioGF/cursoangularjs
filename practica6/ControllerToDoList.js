@@ -15,10 +15,10 @@ var app=angular.module("AppList",[]);
           $scope.nuevoNombre={};
           $scope.nombres= [
             {
-              nombre: "Luis",
+              nombre: "Pan",
             },
             {
-              nombre: "Roberto",
+              nombre: "Queso",
             }
 
           ];
@@ -26,8 +26,8 @@ var app=angular.module("AppList",[]);
             $scope.nombres.push($scope.nuevoNombre);
              $scope.nuevoNombre={};
           };
-            $scope.Borrar=function(){
-              $scope.nombres.splice($scope.nuevoNombre,1);
+            $scope.Borrar=function(index){
+              $scope.nombres.splice(index,1);
               $scope.nuevoNombre={};
             }
       })

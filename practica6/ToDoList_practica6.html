@@ -1,6 +1,7 @@
 <html ng-app= "AppList" >
 <head>
-    <title>Lista</title>
+	<title>Lista</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script src="..\Plugin\angular.min.js"></script>
 	<script src="ControllerToDoList.js"> </script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -15,7 +16,7 @@
 		<table class="table" ng-show="true" >
 		<tbody>
 			<tr ng-repeat="nombre in nombres " >
-				<td><strong>{{nombre.nombre}}</strong> <input  type="button" value="X" ng-click="Borrar(nombre.nombre)"></td>
+				<td><strong>{{nombre.nombre}}</strong> <input  type="button" value="X" ng-click="Borrar($index)"></td>
 			</tr>
 		</tbody>
 		</table>
